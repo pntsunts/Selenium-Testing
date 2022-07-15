@@ -34,14 +34,27 @@ public class Main {
 	  
 	  @Test (priority = 0)
 	  
-	  public void start() throws IOException, InterruptedException {
+	  public void career() throws IOException, InterruptedException {
 		
 		  Selecting sele = new Selecting(driver);
 		  sele.career();
 		  sele.country();
-		  
-		  
+		  sele.Job();
 	  } 
+	  
+	  @Test (priority = 1)
+ 
+	  public void apply() {
+		  Selecting sele = new Selecting(driver);
+		  sele.apply();
+		  sele.name();
+		  sele.email();
+		  sele.phoneNumber();
+		  sele.submit();
+	  }
+	 
+
+ }
 	  
 		   
 	  
@@ -49,4 +62,4 @@ public class Main {
 	  
 	    
 
-}
+

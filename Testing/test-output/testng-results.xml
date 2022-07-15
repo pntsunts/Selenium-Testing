@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-13T13:04:06 SAST" name="Default suite" finished-at="2022-07-13T13:04:41 SAST" duration-ms="34845">
+  <suite started-at="2022-07-15T11:51:26 SAST" name="Default suite" finished-at="2022-07-15T11:52:16 SAST" duration-ms="49752">
     <groups>
     </groups>
-    <test started-at="2022-07-13T13:04:06 SAST" name="Default test" finished-at="2022-07-13T13:04:41 SAST" duration-ms="34845">
+    <test started-at="2022-07-15T11:51:26 SAST" name="Default test" finished-at="2022-07-15T11:52:16 SAST" duration-ms="49752">
       <class name="Entrance.Main">
-        <test-method is-config="true" signature="launch()[pri:0, instance:Entrance.Main@8f4ea7c]" started-at="2022-07-13T13:04:06 SAST" name="launch" finished-at="2022-07-13T13:04:32 SAST" duration-ms="26033" status="PASS">
+        <test-method is-config="true" signature="launch()[pri:0, instance:Entrance.Main@436813f3]" started-at="2022-07-15T11:51:26 SAST" name="launch" finished-at="2022-07-15T11:51:53 SAST" duration-ms="26572" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method signature="start()[pri:0, instance:Entrance.Main@8f4ea7c]" started-at="2022-07-13T13:04:32 SAST" name="start" finished-at="2022-07-13T13:04:41 SAST" duration-ms="8637" status="PASS">
+        <test-method signature="career()[pri:0, instance:Entrance.Main@436813f3]" started-at="2022-07-15T11:51:53 SAST" name="career" finished-at="2022-07-15T11:52:08 SAST" duration-ms="15675" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- start -->
+        </test-method> <!-- career -->
+        <test-method signature="apply()[pri:1, instance:Entrance.Main@436813f3]" started-at="2022-07-15T11:52:08 SAST" name="apply" finished-at="2022-07-15T11:52:16 SAST" duration-ms="7308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- apply -->
       </class> <!-- Entrance.Main -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

@@ -5,8 +5,8 @@
     <classes>
       <class name="Entrance.Main">
         <methods>
-          <include name="start"/>
           <include name="launch"/>
+          <include name="Job"/>
         </methods>
       </class> <!-- Entrance.Main -->
     </classes>
