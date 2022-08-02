@@ -5,8 +5,11 @@
     <classes>
       <class name="Entrance.Main">
         <methods>
+          <include name="Setextent"/>
           <include name="launch"/>
-          <include name="Job"/>
+          <include name="endReport"/>
+          <include name="career"/>
+          <include name="Teardown"/>
         </methods>
       </class> <!-- Entrance.Main -->
     </classes>
