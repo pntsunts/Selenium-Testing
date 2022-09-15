@@ -11,18 +11,16 @@ public class Page1 {
     }
 
     By signup = By.id("signupLnk");
+    By name = By.id("login");
 
 
     public void Signup()  {
         driver.findElement(signup).click();
     }
-
-    public void browser(){
-        String baseUrl = "https://www.traxsource.com/";
-        String driverpath = "C:\\chromedriver.exe";
-        System.setProperty("webdriver.chrome.driver", driverpath);
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.get(baseUrl);
+    public void login(){
+        driver.findElement(name).clear();
+        driver.findElement(name).sendKeys("Peter");
     }
+
+
 }
