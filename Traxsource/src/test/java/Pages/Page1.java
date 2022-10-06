@@ -22,5 +22,4 @@ public class Page1 {
         driver.findElement(name).sendKeys("Peter");
     }
 
-
 }

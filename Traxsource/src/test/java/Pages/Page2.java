@@ -17,9 +17,13 @@ public class Page2 {
     By Last_Name = By.id("last_name");
     By Country = By.id("country_id");
     By Phone = By.id("phone");
+    By login = By.id("loginLnk");
 
     public void login(){
         driver.findElement(name).clear();
         driver.findElement(name).sendKeys("Peter");
+    }
+    public void loginclick(){
+        driver.findElement(login).click();
     }
 }

@@ -2,6 +2,7 @@ package Entrance;
 
 import Pages.Page1;
 import Pages.Page2;
+import Pages.Page3;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
@@ -15,6 +16,8 @@ import org.testng.annotations.BeforeSuite;
 
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import java.util.concurrent.TimeUnit;
 
 
 public class Main {
@@ -42,8 +45,19 @@ public class Main {
             Thread.sleep(1000);
             Page2 page2 = new Page2(driver);
             page2.login();
+            Thread.sleep(2000);
+            page2.loginclick();
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         }
+        @Test (priority = 3)
+        public void login(){
+            driver.switchTo().frame("loginFrame");
+            Page3 page3 = new Page3(driver);
+            page3.Login();
+            page3.click();
+        }
+
 
 }
 
