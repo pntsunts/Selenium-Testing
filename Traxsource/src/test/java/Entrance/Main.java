@@ -8,11 +8,12 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 //import org.junit.Test;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-
 
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -22,13 +23,15 @@ import java.util.concurrent.TimeUnit;
 
 public class Main {
     public WebDriver driver;
+    public String baseUrl = "https://www.traxsource.com/";
 
         @BeforeTest
         public void launch() {
-            String baseUrl = "https://www.traxsource.com/";
-            String driverpath = "C:\\chromedriver.exe";
-            System.setProperty("webdriver.chrome.driver", driverpath);
-            driver = new ChromeDriver();
+
+            WebDriverManager.chromedriver().setup();
+            ChromeOptions options =new ChromeOptions();
+            options.addArguments("--remote-allow-origins=*");
+            driver = new ChromeDriver(options);
             driver.manage().window().maximize();
             driver.get(baseUrl);
 

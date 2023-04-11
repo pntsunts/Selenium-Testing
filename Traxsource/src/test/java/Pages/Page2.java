@@ -2,6 +2,7 @@ package Pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public class Page2 {
     WebDriver driver;
@@ -22,6 +23,9 @@ public class Page2 {
     public void login(){
         driver.findElement(name).clear();
         driver.findElement(name).sendKeys("Peter");
+        driver.findElement(Country);
+        Select option = new Select(driver.findElement(Country));
+        option.selectByIndex(12);
     }
     public void loginclick(){
         driver.findElement(login).click();
