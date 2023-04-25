@@ -44,9 +44,16 @@ public class main4 {
                 }
             }
             //Scrolling
+//            JavascriptExecutor js = (JavascriptExecutor)driver;
+//
+//            js.executeScript("window.scrollBy(0, 10000)");
+//            Thread.sleep(2000);
             JavascriptExecutor js = (JavascriptExecutor)driver;
-            js.executeScript("window.scrollBy(0, 10000)");
-            Thread.sleep(2000);
+
+            WebElement but = driver.findElement(By.xpath("//*[@id=\"footer\"]/div[2]/div[1]/a"));
+            js.executeScript("arguments[0].scrollIntoView();", but);
+
+
 //            driver.quit();
         }
         else{

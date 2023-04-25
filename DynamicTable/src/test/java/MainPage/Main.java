@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class Main {
     public WebDriver driver;
@@ -65,6 +66,7 @@ public class Main {
             for (int j = 0; j < column.size(); j++) {
 
                 String cellText = column.get(j).getText();
+                driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
                 if (cellText.equals("hhhjhk")) {
                     System.out.println("Taiwan was built in : " + column.get(4).getText());
