@@ -10,7 +10,7 @@ import java.util.HashMap;
 public class HTTPSrequests {
 	int id;
 	
-	//@Test
+	@Test
 	void getUser() {
 		
 		given()
@@ -60,8 +60,17 @@ public class HTTPSrequests {
 			.log().all();
 		
 	}
-			
-
 	
-
+	@Test (priority = 3)
+	
+	void deleteUser() {
+		
+		given()
+		
+		.when()
+			.delete("https://reqres.in/api/users/" + id)
+		.then()
+			.statusCode(204)
+			.log().all();
+	}
 }

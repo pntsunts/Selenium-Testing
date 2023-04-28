@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-26T11:29:33 SAST" name="Default suite" finished-at="2023-04-26T11:29:41 SAST" duration-ms="8251">
+  <suite started-at="2023-04-28T07:31:35 SAST" name="Default suite" finished-at="2023-04-28T07:31:40 SAST" duration-ms="5571">
     <groups>
     </groups>
-    <test started-at="2023-04-26T11:29:33 SAST" name="Default test" finished-at="2023-04-26T11:29:41 SAST" duration-ms="8251">
-      <class name="Restassured.HTTPSrequests">
-        <test-method signature="createUser()[pri:1, instance:Restassured.HTTPSrequests@59d016c9]" started-at="2023-04-26T11:29:33 SAST" name="createUser" finished-at="2023-04-26T11:29:40 SAST" duration-ms="7345" status="PASS">
+    <test started-at="2023-04-28T07:31:35 SAST" name="Default test" finished-at="2023-04-28T07:31:40 SAST" duration-ms="5571">
+      <class name="Restassured.MyApi">
+        <test-method signature="delet()[pri:0, instance:Restassured.MyApi@794cb805]" started-at="2023-04-28T07:31:35 SAST" name="delet" finished-at="2023-04-28T07:31:40 SAST" duration-ms="5424" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createUser -->
-        <test-method signature="updateUser()[pri:2, instance:Restassured.HTTPSrequests@59d016c9]" started-at="2023-04-26T11:29:40 SAST" name="updateUser" finished-at="2023-04-26T11:29:41 SAST" depends-on-methods="Restassured.HTTPSrequests.createUser" duration-ms="720" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateUser -->
-      </class> <!-- Restassured.HTTPSrequests -->
+        </test-method> <!-- delet -->
+      </class> <!-- Restassured.MyApi -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

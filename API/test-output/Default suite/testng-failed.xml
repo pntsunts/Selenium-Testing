@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Restassured.HTTPSrequests">
+      <class name="Restassured.MyApi">
         <methods>
-          <include name="createUser"/>
-          <include name="updateUser"/>
+          <include name="delet"/>
         </methods>
-      </class> <!-- Restassured.HTTPSrequests -->
+      </class> <!-- Restassured.MyApi -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
